@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../Logo/logo.PNG';
+import '../Styles/Navbar.css';
 
 const Navbar = () => (
   <>
@@ -15,13 +16,13 @@ const Navbar = () => (
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink to="/" className="p-lg-3">Rockets</NavLink>
+              <NavLink to="/" className="p-lg-3 link">Rockets</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/missions" className="p-lg-3">Missions</NavLink>
+              <NavLink to="/missions" className="p-lg-3 link">Missions</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/profile" className="p-lg-3 ">Profile</NavLink>
+              <NavLink to="/profile" className="p-lg-3 link">Profile</NavLink>
             </li>
           </ul>
         </div>
