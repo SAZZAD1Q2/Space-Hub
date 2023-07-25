@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Rocket from './Components/Rocket';
-import Missions from './Routes/Missions';
-import Profile from './Routes/Profile';
+import Missions from './Components/Missions';
+import Profile from './Components/Profile';
 
 function App() {
   return (
