@@ -22,22 +22,20 @@ const missionSlice = createSlice({
   initialState,
   reducers: {
     join: (state, action) => {
-      const data = JSON.parse(localStorage.getItem('missions')) || state.missions;
+      const data = state.missions;
       const newState = data.map((mission) => {
         if (mission.mission_id !== action.payload) return mission;
         return { ...mission, join: true };
       });
       state.missions = newState;
-      localStorage.setItem('missions', JSON.stringify(newState));
     },
     leave: (state, action) => {
-      const data = JSON.parse(localStorage.getItem('missions')) || state.missions;
+      const data = state.missions;
       const newState = data.map((mission) => {
         if (mission.mission_id !== action.payload) return mission;
         return { ...mission, join: false };
       });
       state.missions = newState;
-      localStorage.setItem('missions', JSON.stringify(newState));
     },
   },
   extraReducers: (builder) => {

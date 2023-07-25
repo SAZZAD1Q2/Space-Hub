@@ -3,11 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions, join, leave } from '../Redux/Missions/missionSlice';
 
 const Missions = () => {
-  let missionsData = useSelector((state) => state.missions.missions);
-  const localMissions = JSON.parse(localStorage.getItem('missions')) || [];
-  if (localMissions.length > 0) {
-    missionsData = localMissions;
-  }
+  const missionsData = useSelector((state) => state.missions.missions);
   const dispatch = useDispatch();
   useEffect(() => {
     if (missionsData.length === 0) {
