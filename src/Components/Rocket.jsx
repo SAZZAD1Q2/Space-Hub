@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchRockets, reserve } from '../Redux/Rocket/rocketSlice';
+import { fetchRockets, reserve, cancel } from '../Redux/Rocket/rocketSlice';
 
 const Rocket = () => {
   const rocketsData = useSelector((state) => state.rockets.rockets);
@@ -34,7 +34,15 @@ const Rocket = () => {
                     )}
                     {rocket.description}
                   </p>
-                  {!rocket.reserved && (
+                  {rocket.reserved ? (
+                    <button
+                      type="button"
+                      onClick={() => dispatch(cancel(rocket.id))}
+                      className="btn btn-outline-secondary"
+                    >
+                      Cancel Reservation
+                    </button>
+                  ) : (
                     <button
                       type="button"
                       onClick={() => dispatch(reserve(rocket.id))}
