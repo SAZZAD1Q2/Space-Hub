@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://space-lemon-mu.vercel.app/)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +87,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 <code>
-  git clone https://github.com/batoolfatima2135/space.git
+  git clone https://github.com/SAZZAD1Q2/Space-Hub.git
   cd space
 </code>
 
