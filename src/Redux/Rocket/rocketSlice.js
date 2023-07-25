@@ -21,22 +21,20 @@ const rocketSlice = createSlice({
   initialState,
   reducers: {
     reserve: (state, action) => {
-      const data = JSON.parse(localStorage.getItem('rockets')) || state.rockets;
+      const data = state.rockets;
       const newState = data.map((rocket) => {
         if (rocket.id !== action.payload) return rocket;
         return { ...rocket, reserved: true };
       });
       state.rockets = newState;
-      localStorage.setItem('rockets', JSON.stringify(newState));
     },
     cancel: (state, action) => {
-      const data = JSON.parse(localStorage.getItem('rockets')) || state.rockets;
+      const data = state.rockets;
       const newState = data.map((rocket) => {
         if (rocket.id !== action.payload) return rocket;
         return { ...rocket, reserved: false };
       });
       state.rockets = newState;
-      localStorage.setItem('rockets', JSON.stringify(newState));
     },
   },
   extraReducers: (builder) => {
