@@ -33,7 +33,7 @@
 # 📖  Space Travelers' Hub <a name="about-project"></a>
 
 
-**Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Data is being fetched by API.
+**Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions. Data is being fetched by API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
