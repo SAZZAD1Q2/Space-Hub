@@ -17,12 +17,18 @@ describe('missionSlice', () => {
     fetchMock.mockResponseOnce(JSON.stringify(mockMissions));
 
     const store = mockStore({ missions: { data: null, error: null } });
+
+    // Dispatch the fetchMissions action and wait for it to complete
     await store.dispatch(fetchMissions());
 
+    // Get the actions that were dispatched to the mock store
     const actions = store.getActions();
 
+    // Expectations
     expect(actions[0].type).toEqual(fetchMissions.pending.type);
     expect(actions[1].type).toEqual(fetchMissions.fulfilled.type);
     expect(store.getState().missions.error).toBeNull();
   });
+
+  // ... other test cases ...
 });
