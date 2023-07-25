@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from '../Redux/store';
+import store from '../Redux/Store';
 import Missions from '../Components/Missions';
 import Rocket from '../Components/Rocket';
 import Profile from '../Components/Profile';
