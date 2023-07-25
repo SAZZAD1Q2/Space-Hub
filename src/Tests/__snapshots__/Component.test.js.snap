@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component testing Mission component should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container my-5"
+  >
+    <div
+      class="table-responsive table-sm"
+    >
+      <table
+        class="table table-bordered text-start table-striped"
+      >
+        <thead>
+          <tr>
+            <th
+              class="col-lg-1 col-md-1 "
+              scope="col"
+            >
+              Mission
+            </th>
+            <th
+              class="col-lg-8 col-md-7"
+              scope="col"
+            >
+              Description
+            </th>
+            <th
+              class="col-lg-1 col-md-1"
+              scope="col"
+            >
+              Status
+            </th>
+            <th
+              class="col-lg-2 col-md-3"
+              scope="col"
+            >
+               
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component testing Profile component should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container py-2"
+  >
+    <div
+      class="row py-5"
+    >
+      <div
+        class="col-6"
+      >
+        <h4>
+          My Missions
+        </h4>
+        <ul
+          class="list-group "
+        >
+          <li
+            class="list-group-item"
+          >
+            No missions
+          </li>
+        </ul>
+      </div>
+      <div
+        class="col-6"
+      >
+        <h4>
+          My Rockets
+        </h4>
+        <ul
+          class="list-group"
+        >
+          <li
+            class="list-group-item"
+          >
+            No rockets
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component testing Rocket component should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container my-3"
+  >
+    <div>
+      <h3>
+        Loading
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
