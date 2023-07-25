@@ -1,9 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
+import rocketsReducer from './Rockets/rocket';
 
-const Store = configureStore({
+const store = configureStore({
   reducer: {
-
+    rockets: rocketsReducer,
   },
-});
+},
+applyMiddleware(thunk));
 
-export default Store;
+export default store;

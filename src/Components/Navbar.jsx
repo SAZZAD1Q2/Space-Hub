@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../Logo/logo.png';
 import '../Styles/Navbar.css';
 
 const Navbar = () => (
@@ -7,7 +6,7 @@ const Navbar = () => (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border border-secondary-subtle border-end-0 border-top-0 border-start-0">
       <div className="container-fluid mx-4 p-1">
         <h3>
-          <img src={logo} alt="logo" height="60px" className="mx-2" />
+          <img alt="logo" height="60px" className="mx-2" />
           Space Travellers&apos; Hub
         </h3>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
