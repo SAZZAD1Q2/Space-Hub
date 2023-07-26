@@ -1,6 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import axios from 'axios';
 
 const initialState = {
   rockets: [],
@@ -10,8 +8,8 @@ const initialState = {
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (ThunkApi) => {
   try {
-    const response = await axios('https://api.spacexdata.com/v4/rockets');
-    return response.data;
+    const response = await fetch('https://api.spacexdata.com/v4/rockets');
+    return response.json();
   } catch (error) {
     return ThunkApi.rejectWithValue('something went wrong');
   }
